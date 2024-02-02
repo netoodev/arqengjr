@@ -35,7 +35,6 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    padding-bottom: 20px;
 }
 
 header {
@@ -284,4 +283,32 @@ section#quem-somos {
 
 #radio3:checked ~ .first{
     margin-left: -100%;
+}
+
+/* Fim do Slide do Quem Somos */
+
+.quem-somos-info {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.quem-somos-info .info-container {
+    display: flex;
+    width: 208px;
+    gap: 10px;
+    align-items: center;
+}
+
+.quem-somos-info .info-container .info-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.quem-somos-info .info-container .info-text-wrapper h1 {
+    font-family: var(--font-texto);
+    font-size: 1rem;
+    font-weight: 700;
 }
