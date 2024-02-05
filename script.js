@@ -15,6 +15,20 @@ function nextBannerImage(){
     document.getElementById("radio-banner"+countBanner).checked = true;
 }
 
+// Contagem dos dados na Seção Info
+
+$('.contagem').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 5000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+
 
 // Slide da Seção Quem Somos
 

@@ -206,7 +206,7 @@ section#home {
     border: 1px solid transparent;
     border-radius: 50px;
     font-family: var(--font-titulo);
-    font-weight: 700;
+    font-weight: 600;
     font-size: 1rem;
     color: var(--color-white);
     background-color: var(--color-orange);
@@ -237,7 +237,7 @@ section#home {
 }
 
 .manual-navigation-banner{
-    position: relative;
+    position: absolute;
     width: 100px;
     left: 50%;
     top: 0;
@@ -304,6 +304,37 @@ section#home {
 }
 
 /* Fim da Seção Home */
+
+/* Seção Info */
+
+section#info {
+    width: 100%;
+    padding: 0 5% 50px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-data .contagem, span {
+    font-family: var(--font-titulo);
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--color-orange);
+}
+
+.info-data h2 {
+    font-family: var(--font-titulo);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-orange);
+}
+
 
 /* Seção Quem Somos */
 
