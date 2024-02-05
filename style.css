@@ -89,7 +89,7 @@ header .header-links ul li .selected {
 header .header-button a {
     text-decoration: none;
     background-color: var(--color-orange);
-    color: var(--color-dark-gray);
+    color: var(--color-white);
     font-family: var(--font-titulo);
     font-size: .8rem;
     font-style: normal;
@@ -97,7 +97,6 @@ header .header-button a {
     border-radius: 8px;
     border: 1px solid transparent;
     padding: 10px;
-    border: solid 0.1rem var(--color-dark-gray);
     transition: .5s;
 }
 
@@ -124,6 +123,10 @@ section#home {
     width: 100%;
 }
 
+.home-banner-slide {
+    width: 100%;
+    margin-top: -200px;
+}
 
 
 /* Imagens do slide */
@@ -168,6 +171,55 @@ section#home {
     overflow: hidden;
 }
 
+.banner-elements {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top: 550px;
+}
+
+.banner-elements .banner-logo {
+    width: 100%;
+    height: 50px;
+    background-image: url('assets/logo-horizontal.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.banner-elements p {
+    color: var(--color-white);
+    font-family: var(--font-titulo);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.banner-elements a {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.banner-elements a:hover {
+    background-color: transparent;
+    border-color: var(--color-orange);
+    color: var(--color-orange);
+}
+
 .slides-banner {
     width: 300%;
     height: 100vh;
@@ -185,7 +237,7 @@ section#home {
 }
 
 .manual-navigation-banner{
-    position: absolute;
+    position: relative;
     width: 100px;
     left: 50%;
     top: 0;
