@@ -68,9 +68,9 @@ header .topic {
     text-decoration: none;
     color:var(--color-dark-gray);
     font-family: var(--font-titulo);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     transition: .5s;
 }
 
@@ -93,8 +93,7 @@ header .header-button a {
     font-family: var(--font-titulo);
     font-size: .8rem;
     font-style: normal;
-    font-weight: 700;
-    border-radius: 8px;
+    font-weight: 600;
     border: 1px solid transparent;
     padding: 10px;
     transition: .5s;
@@ -194,30 +193,29 @@ section#home {
 }
 
 .banner-elements p {
-    color: var(--color-white);
+    color: var(--color-orange);
     font-family: var(--font-titulo);
     font-size: 1.4rem;
     font-weight: 600;
 }
 
 .banner-elements a {
-    width: 200px;
-    padding: 20px;
-    border: 1px solid transparent;
-    border-radius: 50px;
-    font-family: var(--font-titulo);
-    font-weight: 600;
-    font-size: 1rem;
-    color: var(--color-white);
-    background-color: var(--color-orange);
     text-decoration: none;
+    background-color: transparent;
+    color: var(--color-orange);
+    font-family: var(--font-titulo);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    /* border-radius: 8px; */
+    border: 1px solid var(--color-orange);
+    padding: 15px;
     transition: .5s;
 }
 
 .banner-elements a:hover {
-    background-color: transparent;
-    border-color: var(--color-orange);
-    color: var(--color-orange);
+    background-color: var(--color-orange);
+    color: var(--color-white);
 }
 
 .slides-banner {
@@ -474,21 +472,77 @@ section#quem-somos {
 
 /* Fim da seção Quem Somos */
 
-/* Seção Empresa */
+/* Seção Empresas */
 
-section#empresa {
+section#empresas {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.empresas-title h2 {
+    font-family: var(--font-titulo);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-orange);
+}
+
+.empresas-slider {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.empresa-slide-track {
+    display: flex;
+    justify-content: space-between;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(195px * 18);
+}
+
+.empresa-slide {
+    width: 195px;
+}
+
+.empresa-slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-animation: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-animation: translateX(calc(-195px * 9));
+        transform: translateX(calc(-195px * 9));
+    }
+}
+
+/* Fim da Seção Empresas */
+
+/* Seção Nossa Empresa */
+
+section#nossa-empresa {
     background-color: var(--color-white);
     width: 100%;
     padding: 50px 5%;
 }
 
-.empresa-content {
+.nossa-empresa-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.empresa-description {
+.nossa-empresa-description {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -496,38 +550,38 @@ section#empresa {
     gap: 40px;
 }
 
-.empresa-description > h1 {
+.nossa-empresa-description > h1 {
     font-size: 2.1rem;
     font-family: var(--font-titulo);
     font-weight: 700;
     color: var(--color-orange);
 }
 
-.empresa-description > p {
+.nossa-empresa-description > p {
     font-size: 1.3rem;
     font-family: var(--font-texto);
     font-weight: 500;
     color: var(--color-dark-gray);
 }
 
-.empresa-description > a {
+.nossa-empresa-description > a {
     width: 208px;
     padding: 15px 0;
-    text-align: center;
     text-decoration: none;
+    text-align: center;
     background-color: var(--color-orange);
     color: var(--color-white);
-    border: 1px solid transparent;
-    border-radius: 8px;
     font-family: var(--font-titulo);
-    font-weight: 700;
-    font-size: 1.1rem;
-    cursor: pointer;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    border: 1px solid transparent;
     transition: .5s;
 }
 
-.empresa-description > a:hover {
+.nossa-empresa-description > a:hover {
     background-color: transparent;
     color: var(--color-orange);
     border: 1px solid var(--color-orange);
 }
+
